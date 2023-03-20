@@ -271,7 +271,7 @@ class FeatureFusionLayer(nn.Module):
         #    else:
         #        new_pos_src1 = torch.cat((new_pos_src1,pos_src1),0)
 
-        q1 = k1 = src1 + pos_src1_cross
+        q1 = k1 = src1 #+ pos_src1_cross
         #print("test")
         #print(q1.shape)
         #print(src1.shape)
